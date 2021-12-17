@@ -1,6 +1,8 @@
 package one.digitalinnovation;
 
 public class Main {
+
+
     public static void main(String[] args) {
         Pilha minhaPilha = new Pilha();
         minhaPilha.push("primeiro");
@@ -12,6 +14,10 @@ public class Main {
         minhaPilha.push("setimo");
         minhaPilha.push("oitavo");
 
+        int[] numbers = new int[10];
+
+        int a = numbers[1];
+
         System.out.println(minhaPilha);
         System.out.println(minhaPilha.pop());
 
@@ -19,4 +25,5 @@ public class Main {
 
         System.out.println(minhaPilha);
     }
+
 }
