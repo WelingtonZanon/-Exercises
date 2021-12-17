@@ -1,10 +1,13 @@
 package one.digitalinnovation;
 
-public class Pilha {
+public class Pilha<T> {
 
     No refNoEntradaPilha = null;
 
-    public void push (No novoNo){
+    public void push (T obj){
+
+        No novoNo = new No<>(obj);
+
         No refAuxiliar = refNoEntradaPilha;
         refNoEntradaPilha = novoNo;
         refNoEntradaPilha.setRefNo(refAuxiliar);
